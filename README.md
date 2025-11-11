@@ -444,7 +444,7 @@ Need help?
 - 📖 Check this README
 - 🐛 Common issues in Troubleshooting section
 - 💬 Create GitHub issue
-- 📧 Contact: your-email@example.com
+- 📧 Contact: shivannadm16@gmail.com
 
 ---
 

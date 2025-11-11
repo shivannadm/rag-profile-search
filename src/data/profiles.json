@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Johnson",
+    "email": "sarah.j@email.com",
+    "phone": "+1-555-0101",
+    "title": "Senior Full Stack Developer",
+    "location": "San Francisco, CA",
+    "experience": 7,
+    "skills": [
+      "React",
+      "Node.js",
+      "Python",
+      "AWS",
+      "MongoDB",
+      "TypeScript",
+      "GraphQL"
+    ],
+    "summary": "Experienced full-stack developer with expertise in building scalable web applications. Strong background in React, Node.js, and cloud technologies."
+  },
+  {
+    "id": 2,
+    "name": "Michael Chen",
+    "email": "m.chen@email.com",
+    "phone": "+1-555-0102",
+    "title": "Machine Learning Engineer",
+    "location": "New York, NY",
+    "experience": 5,
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "scikit-learn",
+      "Deep Learning",
+      "NLP",
+      "Computer Vision"
+    ],
+    "summary": "ML engineer specializing in deep learning and NLP. Published researcher with experience deploying production ML systems."
+  },
+  {
+    "id": 3,
+    "name": "Emily Rodriguez",
+    "email": "emily.r@email.com",
+    "phone": "+1-555-0103",
+    "title": "Frontend Developer",
+    "location": "Austin, TX",
+    "experience": 4,
+    "skills": [
+      "React",
+      "Vue.js",
+      "JavaScript",
+      "CSS",
+      "HTML5",
+      "Tailwind",
+      "Figma"
+    ],
+    "summary": "Creative frontend developer passionate about building beautiful, accessible user interfaces. Expert in modern JavaScript frameworks."
+  },
+  {
+    "id": 4,
+    "name": "David Park",
+    "email": "d.park@email.com",
+    "phone": "+1-555-0104",
+    "title": "DevOps Engineer",
+    "location": "Seattle, WA",
+    "experience": 6,
+    "skills": [
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "CI/CD",
+      "Terraform",
+      "Linux",
+      "Python"
+    ],
+    "summary": "DevOps specialist focused on automation and infrastructure as code. Experienced in cloud architecture and container orchestration."
+  },
+  {
+    "id": 5,
+    "name": "Lisa Wang",
+    "email": "lisa.w@email.com",
+    "phone": "+1-555-0105",
+    "title": "Data Scientist",
+    "location": "Boston, MA",
+    "experience": 5,
+    "skills": [
+      "Python",
+      "R",
+      "SQL",
+      "Data Analysis",
+      "Machine Learning",
+      "Statistics",
+      "Tableau"
+    ],
+    "summary": "Data scientist with strong statistical background and business acumen. Expert in extracting insights from complex datasets."
+  }
+]

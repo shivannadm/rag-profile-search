@@ -390,6 +390,11 @@ npm run build
 
 ---
 
+## 💻 Try out the live deployements
+- Dtaset based deploy: https://ragdatafile.netlify.app/
+- OpenAI API key Based: https://ragserch.netlify.app/
+
+ 
 ## 🎓 Learning Resources
 
 - [OpenAI Embeddings Guide](https://platform.openai.com/docs/guides/embeddings)

@@ -250,11 +250,11 @@ class EmbeddingService {
       const keys1 = Object.keys(vec1);
       const keys2 = Object.keys(vec2);
       const allKeys = [...new Set([...keys1, ...keys2])];
-
+      
       let dotProduct = 0;
       let mag1 = 0;
       let mag2 = 0;
-
+      
       allKeys.forEach(key => {
         const v1 = vec1[key] || 0;
         const v2 = vec2[key] || 0;
@@ -262,7 +262,7 @@ class EmbeddingService {
         mag1 += v1 * v1;
         mag2 += v2 * v2;
       });
-
+      
       if (mag1 === 0 || mag2 === 0) return 0;
       return dotProduct / (Math.sqrt(mag1) * Math.sqrt(mag2));
     }
@@ -296,17 +296,17 @@ class RAGSearch {
 
   async search(query, profiles, topK = 10) {
     const queryEmbedding = await this.embeddingService.createEmbedding(query);
-
+    
     const scoredProfiles = profiles.map(profile => {
       const profileEmbedding = this.profileEmbeddings.get(profile.id);
       const similarity = this.embeddingService.cosineSimilarity(queryEmbedding, profileEmbedding);
-
+      
       return {
         ...profile,
         relevanceScore: similarity
       };
     });
-
+    
     return scoredProfiles
       .sort((a, b) => b.relevanceScore - a.relevanceScore)
       .slice(0, topK);
@@ -330,14 +330,14 @@ export default function RAGProfileSearch() {
 
   const initializeRAG = async () => {
     try {
-      // Check for OpenAI API key
-      const apiKey = import.meta.env.VITE_OPENAI_API_KEY || 'demo_mode';
-      const mode = apiKey === 'demo_mode' ? 'demo' : 'openai';
+      // Check for OpenAI API key - handle undefined gracefully
+      const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
+      const mode = (apiKey && apiKey !== 'demo_mode' && apiKey !== 'undefined') ? 'openai' : 'demo';
       setApiMode(mode);
 
       const embeddingService = new EmbeddingService(apiKey);
       const rag = new RAGSearch(embeddingService);
-
+      
       await rag.indexProfiles(SAMPLE_PROFILES);
       setRagSearch(rag);
       setIsIndexing(false);
@@ -349,14 +349,14 @@ export default function RAGProfileSearch() {
 
   const handleSearch = async () => {
     if (!searchQuery.trim() || !ragSearch) return;
-
+    
     setIsSearching(true);
-
+    
     try {
       const startTime = performance.now();
       const searchResults = await ragSearch.search(searchQuery, SAMPLE_PROFILES, 10);
       const endTime = performance.now();
-
+      
       setResults(searchResults);
       setSearchStats({
         totalProfiles: SAMPLE_PROFILES.length,
@@ -402,8 +402,9 @@ export default function RAGProfileSearch() {
               </div>
             </div>
             <div className="text-right">
-              <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium ${apiMode === 'openai' ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700'
-                }`}>
+              <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium ${
+                apiMode === 'openai' ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700'
+              }`}>
                 {apiMode === 'openai' ? '🚀 OpenAI Mode' : '⚡ Demo Mode'}
               </div>
               <p className="text-xs text-gray-500 mt-1">
@@ -421,12 +422,7 @@ export default function RAGProfileSearch() {
             <AlertCircle className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
             <div className="flex-1">
               <h3 className="font-semibold text-yellow-900 mb-1">Demo Mode Active</h3>
-              <p className="text-sm text-yellow-800">
-                Running with basic TF-IDF embeddings. For better results, add your OpenAI API key to <code className="bg-yellow-100 px-2 py-0.5 rounded">.env</code> file:
-              </p>
-              <code className="text-xs bg-yellow-100 px-3 py-1 rounded mt-2 inline-block">
-                VITE_OPENAI_API_KEY=your_key_here
-              </code>
+              
             </div>
           </div>
         )}
@@ -461,7 +457,7 @@ export default function RAGProfileSearch() {
               )}
             </button>
           </div>
-
+          
           {/* Search Stats */}
           {searchStats && (
             <div className="mt-3 flex items-center gap-4 text-sm text-gray-600">
@@ -483,7 +479,7 @@ export default function RAGProfileSearch() {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Top Matches ({results.length})
             </h2>
-
+            
             {results.map((profile, index) => (
               <div
                 key={profile.id}

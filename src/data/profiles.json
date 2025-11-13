@@ -1,12 +1,32 @@
 [
   {
     "id": 1,
+    "name": "Raj Patel",
+    "email": "raj.patel@gmail.com",
+    "phone": "+1-555-0108",
+    "title": "AI/ML Engineer",
+    "location": "San Jose, CA",
+    "experience": 6,
+    "domain": "Machine Learning",
+    "skills": [
+      "Python",
+      "Deep Learning",
+      "MLOps",
+      "TensorFlow",
+      "Kubernetes",
+      "Model Deployment"
+    ],
+    "summary": "AI/ML engineer focused on production ML systems. Experience with model optimization, deployment pipelines, and MLOps best practices. Contributed to 5+ open-source AI projects."
+  },
+  {
+    "id": 2,
     "name": "Sarah Johnson",
-    "email": "sarah.j@email.com",
-    "phone": "+1-555-0101",
+    "email": "sarah.johnson.dev@gmail.com",
+    "phone": "+1-408-555-2341",
     "title": "Senior Full Stack Developer",
     "location": "San Francisco, CA",
-    "experience": 7,
+    "experience": 9,
+    "domain": "Web Development",
     "skills": [
       "React",
       "Node.js",
@@ -14,84 +34,380 @@
       "AWS",
       "MongoDB",
       "TypeScript",
-      "GraphQL"
+      "GraphQL",
+      "Docker"
     ],
-    "summary": "Experienced full-stack developer with expertise in building scalable web applications. Strong background in React, Node.js, and cloud technologies."
-  },
-  {
-    "id": 2,
-    "name": "Michael Chen",
-    "email": "m.chen@email.com",
-    "phone": "+1-555-0102",
-    "title": "Machine Learning Engineer",
-    "location": "New York, NY",
-    "experience": 5,
-    "skills": [
-      "Python",
-      "TensorFlow",
-      "PyTorch",
-      "scikit-learn",
-      "Deep Learning",
-      "NLP",
-      "Computer Vision"
-    ],
-    "summary": "ML engineer specializing in deep learning and NLP. Published researcher with experience deploying production ML systems."
+    "summary": "Senior full-stack developer specializing in scalable web applications. Led development teams at two startups, building products from 0 to 1M users. Expert in microservices architecture."
   },
   {
     "id": 3,
+    "name": "Michael Chen",
+    "email": "mchen.tech@outlook.com",
+    "phone": "+1-650-555-7823",
+    "title": "Machine Learning Research Engineer",
+    "location": "Palo Alto, CA",
+    "experience": 7,
+    "domain": "Machine Learning",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "TensorFlow",
+      "NLP",
+      "Computer Vision",
+      "Research",
+      "Paper Writing"
+    ],
+    "summary": "ML research engineer with 3 published papers at top-tier conferences (NeurIPS, ICML). Specialized in transformer models and large language models. PhD in Computer Science."
+  },
+  {
+    "id": 4,
     "name": "Emily Rodriguez",
-    "email": "emily.r@email.com",
-    "phone": "+1-555-0103",
-    "title": "Frontend Developer",
+    "email": "emily.rod@protonmail.com",
+    "phone": "+1-512-555-9012",
+    "title": "Frontend Engineer",
     "location": "Austin, TX",
-    "experience": 4,
+    "experience": 5,
+    "domain": "Frontend Development",
     "skills": [
       "React",
       "Vue.js",
       "JavaScript",
+      "TypeScript",
       "CSS",
-      "HTML5",
       "Tailwind",
-      "Figma"
+      "Figma",
+      "Webpack"
     ],
-    "summary": "Creative frontend developer passionate about building beautiful, accessible user interfaces. Expert in modern JavaScript frameworks."
+    "summary": "Frontend engineer passionate about creating pixel-perfect, accessible interfaces. Rebuilt the entire UI for a fintech company, improving load times by 60% and increasing user satisfaction by 40%."
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "David Park",
-    "email": "d.park@email.com",
-    "phone": "+1-555-0104",
-    "title": "DevOps Engineer",
+    "email": "davidpark.devops@gmail.com",
+    "phone": "+1-206-555-4567",
+    "title": "Senior DevOps Engineer",
     "location": "Seattle, WA",
-    "experience": 6,
+    "experience": 8,
+    "domain": "DevOps",
     "skills": [
       "Docker",
       "Kubernetes",
       "AWS",
-      "CI/CD",
       "Terraform",
-      "Linux",
-      "Python"
+      "CI/CD",
+      "Jenkins",
+      "Python",
+      "Bash"
     ],
-    "summary": "DevOps specialist focused on automation and infrastructure as code. Experienced in cloud architecture and container orchestration."
+    "summary": "DevOps engineer specializing in cloud infrastructure and automation. Reduced deployment time from 2 hours to 15 minutes. Managed infrastructure for applications serving 10M+ daily users."
   },
   {
-    "id": 5,
-    "name": "Lisa Wang",
-    "email": "lisa.w@email.com",
-    "phone": "+1-555-0105",
+    "id": 6,
+    "name": "Priya Sharma",
+    "email": "priya.sharma.ds@gmail.com",
+    "phone": "+1-617-555-3421",
     "title": "Data Scientist",
     "location": "Boston, MA",
-    "experience": 5,
+    "experience": 6,
+    "domain": "Data Science",
     "skills": [
       "Python",
       "R",
       "SQL",
-      "Data Analysis",
       "Machine Learning",
       "Statistics",
-      "Tableau"
+      "Tableau",
+      "Spark",
+      "scikit-learn"
     ],
-    "summary": "Data scientist with strong statistical background and business acumen. Expert in extracting insights from complex datasets."
+    "summary": "Data scientist with strong background in statistical modeling and business intelligence. Built predictive models that increased revenue by $2M annually. Expert in A/B testing and experimentation."
+  },
+  {
+    "id": 7,
+    "name": "James Miller",
+    "email": "james.miller.backend@outlook.com",
+    "phone": "+1-303-555-8901",
+    "title": "Backend Engineer",
+    "location": "Denver, CO",
+    "experience": 7,
+    "domain": "Backend Development",
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "PostgreSQL",
+      "Redis",
+      "Microservices",
+      "REST API",
+      "Docker",
+      "Kafka"
+    ],
+    "summary": "Backend engineer focused on building high-performance APIs and distributed systems. Optimized database queries reducing response time by 80%. Experience with systems handling 100K+ requests per second."
+  },
+  {
+    "id": 8,
+    "name": "Anna Kowalski",
+    "email": "anna.k.design@gmail.com",
+    "phone": "+1-312-555-6789",
+    "title": "Senior UX/UI Designer",
+    "location": "Chicago, IL",
+    "experience": 8,
+    "domain": "UI/UX Design",
+    "skills": [
+      "Figma",
+      "Adobe XD",
+      "User Research",
+      "Prototyping",
+      "Design Systems",
+      "Sketch",
+      "HTML/CSS"
+    ],
+    "summary": "Senior product designer with expertise in user research and design systems. Led design for a healthcare app used by 500K+ patients. Created design system adopted across 15+ products."
+  },
+  {
+    "id": 9,
+    "name": "Carlos Martinez",
+    "email": "carlos.martinez.mobile@gmail.com",
+    "phone": "+1-305-555-2345",
+    "title": "Senior Mobile Developer",
+    "location": "Miami, FL",
+    "experience": 9,
+    "domain": "Mobile Development",
+    "skills": [
+      "React Native",
+      "iOS",
+      "Android",
+      "Swift",
+      "Kotlin",
+      "Firebase",
+      "JavaScript",
+      "Flutter"
+    ],
+    "summary": "Mobile developer with 9 years building cross-platform apps. Published 8 apps with 5M+ combined downloads. Led mobile team at a travel startup, scaling from 0 to 2M MAU."
+  },
+  {
+    "id": 10,
+    "name": "Rachel Green",
+    "email": "rachel.green.pm@gmail.com",
+    "phone": "+1-858-555-7890",
+    "title": "Senior Product Manager",
+    "location": "San Diego, CA",
+    "experience": 10,
+    "domain": "Product Management",
+    "skills": [
+      "Product Strategy",
+      "Agile",
+      "Scrum",
+      "User Stories",
+      "JIRA",
+      "Analytics",
+      "Roadmapping",
+      "SQL"
+    ],
+    "summary": "Product manager with 10 years leading B2B and B2C products. Launched 5 major features generating $10M+ in annual revenue. Strong technical background with ability to dive deep into code."
+  },
+  {
+    "id": 11,
+    "name": "Tom Anderson",
+    "email": "tom.anderson.security@protonmail.com",
+    "phone": "+1-202-555-4321",
+    "title": "Senior Security Engineer",
+    "location": "Washington, DC",
+    "experience": 11,
+    "domain": "Cybersecurity",
+    "skills": [
+      "Penetration Testing",
+      "SIEM",
+      "Security Auditing",
+      "Python",
+      "AWS Security",
+      "Compliance",
+      "Threat Detection"
+    ],
+    "summary": "Security engineer with 11 years protecting enterprise systems. CISSP and CEH certified. Led security audits for Fortune 500 companies. Expert in cloud security and zero-trust architecture."
+  },
+  {
+    "id": 12,
+    "name": "Lisa Wang",
+    "email": "lisa.wang.ai@gmail.com",
+    "phone": "+1-415-555-9876",
+    "title": "AI Research Scientist",
+    "location": "San Francisco, CA",
+    "experience": 8,
+    "domain": "Artificial Intelligence",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Deep Learning",
+      "NLP",
+      "Reinforcement Learning",
+      "Paper Writing",
+      "Research"
+    ],
+    "summary": "AI research scientist specializing in natural language processing. Published 12 papers with 500+ citations. Led research team at AI startup, developing state-of-the-art conversational AI models."
+  },
+  {
+    "id": 13,
+    "name": "Kevin Lee",
+    "email": "kevin.lee.blockchain@gmail.com",
+    "phone": "+1-646-555-3456",
+    "title": "Blockchain Developer",
+    "location": "New York, NY",
+    "experience": 5,
+    "domain": "Blockchain",
+    "skills": [
+      "Solidity",
+      "Ethereum",
+      "Web3.js",
+      "Smart Contracts",
+      "JavaScript",
+      "Node.js",
+      "React",
+      "Rust"
+    ],
+    "summary": "Blockchain developer with 5 years building DeFi applications. Developed smart contracts managing $50M+ in assets. Expert in Ethereum, Solana, and layer-2 scaling solutions."
+  },
+  {
+    "id": 14,
+    "name": "Jessica Brown",
+    "email": "jess.brown.data@outlook.com",
+    "phone": "+1-720-555-6543",
+    "title": "Data Engineer",
+    "location": "Denver, CO",
+    "experience": 6,
+    "domain": "Data Engineering",
+    "skills": [
+      "Python",
+      "Spark",
+      "Airflow",
+      "AWS",
+      "SQL",
+      "ETL",
+      "Kafka",
+      "Snowflake",
+      "Data Pipelines"
+    ],
+    "summary": "Data engineer building scalable data pipelines. Processes 10TB+ daily data. Migrated legacy ETL systems to modern data stack, reducing costs by 40% and improving reliability."
+  },
+  {
+    "id": 15,
+    "name": "Ahmed Hassan",
+    "email": "ahmed.hassan.cloud@gmail.com",
+    "phone": "+1-214-555-8765",
+    "title": "Cloud Architect",
+    "location": "Dallas, TX",
+    "experience": 12,
+    "domain": "Cloud Computing",
+    "skills": [
+      "AWS",
+      "Azure",
+      "GCP",
+      "Terraform",
+      "Kubernetes",
+      "Architecture Design",
+      "Cost Optimization"
+    ],
+    "summary": "Cloud architect with 12 years designing enterprise cloud solutions. AWS and Azure certified. Architected cloud migration for Fortune 500 company, saving $5M annually. Expert in multi-cloud strategies."
+  },
+  {
+    "id": 16,
+    "name": "Sophie Martin",
+    "email": "sophie.martin.frontend@gmail.com",
+    "phone": "+1-503-555-2109",
+    "title": "Frontend Developer",
+    "location": "Portland, OR",
+    "experience": 4,
+    "domain": "Frontend Development",
+    "skills": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "JavaScript",
+      "GraphQL",
+      "Testing"
+    ],
+    "summary": "Frontend developer specializing in React and modern web technologies. Built responsive, accessible interfaces for e-commerce platform serving 1M+ users. Passionate about web performance optimization."
+  },
+  {
+    "id": 17,
+    "name": "Marcus Johnson",
+    "email": "marcus.j.gamedev@gmail.com",
+    "phone": "+1-512-555-7654",
+    "title": "Game Developer",
+    "location": "Austin, TX",
+    "experience": 7,
+    "domain": "Game Development",
+    "skills": [
+      "Unity",
+      "C#",
+      "Unreal Engine",
+      "C++",
+      "3D Graphics",
+      "Game Design",
+      "Shader Programming"
+    ],
+    "summary": "Game developer with 7 years creating immersive gaming experiences. Shipped 4 games with 2M+ combined players. Expert in Unity and Unreal Engine, specializing in multiplayer game mechanics."
+  },
+  {
+    "id": 18,
+    "name": "Nina Patel",
+    "email": "nina.patel.ml@gmail.com",
+    "phone": "+1-408-555-3210",
+    "title": "Machine Learning Engineer",
+    "location": "San Jose, CA",
+    "experience": 5,
+    "domain": "Machine Learning",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "scikit-learn",
+      "MLOps",
+      "Feature Engineering",
+      "Model Deployment",
+      "Docker"
+    ],
+    "summary": "ML engineer building production-ready machine learning systems. Deployed recommendation engine increasing user engagement by 35%. Experience with end-to-end ML lifecycle from research to production."
+  },
+  {
+    "id": 19,
+    "name": "Robert Kim",
+    "email": "robert.kim.embedded@outlook.com",
+    "phone": "+1-408-555-9012",
+    "title": "Embedded Systems Engineer",
+    "location": "San Jose, CA",
+    "experience": 9,
+    "domain": "Embedded Systems",
+    "skills": [
+      "C",
+      "C++",
+      "Embedded Linux",
+      "RTOS",
+      "ARM",
+      "IoT",
+      "Hardware Design",
+      "Python"
+    ],
+    "summary": "Embedded systems engineer with 9 years developing firmware for IoT devices. Designed firmware for smart home products deployed in 500K+ homes. Expert in low-power embedded systems and wireless protocols."
+  },
+  {
+    "id": 20,
+    "name": "Isabella Garcia",
+    "email": "isabella.garcia.qa@gmail.com",
+    "phone": "+1-425-555-6789",
+    "title": "QA Automation Engineer",
+    "location": "Seattle, WA",
+    "experience": 6,
+    "domain": "Quality Assurance",
+    "skills": [
+      "Selenium",
+      "Cypress",
+      "Python",
+      "JavaScript",
+      "Jest",
+      "CI/CD",
+      "Performance Testing",
+      "API Testing"
+    ],
+    "summary": "QA automation engineer with 6 years building comprehensive test frameworks. Reduced manual testing time by 70% through automation. Built CI/CD pipelines with automated testing catching 95% of bugs before production."
   }
 ]

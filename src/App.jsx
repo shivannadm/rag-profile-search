@@ -341,11 +341,11 @@ export default function RAGProfileSearch() {
                         {skill}
                       </span>
                     ))}
-                    {/* {profile.skills.length > 6 && (
+                    {profile.skills.length > 6 && (
                       <span className="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">
                         +{profile.skills.length - 6} more
                       </span>
-                    )} */}
+                    )}
                   </div>
 
                   {selectedProfile?.id === profile.id && (

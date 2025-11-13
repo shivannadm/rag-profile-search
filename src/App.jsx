@@ -203,7 +203,7 @@ export default function RAGProfileSearch() {
                 🎯 Smart RAG Search
               </div>
               <p className="text-xs text-gray-500 mt-1">
-                {profilesData.length} profiles indexed
+                {profilesData.length} profiles Extracted
               </p>
             </div>
           </div>

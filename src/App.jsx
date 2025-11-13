@@ -21,10 +21,10 @@ export default function RAGProfileSearch() {
     }
 
     // Pattern: "8+ years", "8 years", "8+"
-    const plusPattern = /(\d+)\+?\s*(years?|yrs?|year|yr)?/i;
+    const plusPattern = /(more\s+than\s+)?(\d+)\+?\s*(years?|yrs?|year|yr)?/i;
     const match = lowerQuery.match(plusPattern);
     if (match) {
-      return parseInt(match[1]);
+      return parseInt(match[2]);
     }
 
     // Seniority keywords
@@ -341,11 +341,11 @@ export default function RAGProfileSearch() {
                         {skill}
                       </span>
                     ))}
-                    {profile.skills.length > 6 && (
+                    {/* {profile.skills.length > 6 && (
                       <span className="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">
                         +{profile.skills.length - 6} more
                       </span>
-                    )}
+                    )} */}
                   </div>
 
                   {selectedProfile?.id === profile.id && (
